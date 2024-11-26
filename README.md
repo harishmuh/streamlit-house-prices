@@ -10,8 +10,8 @@ This is a **machine learning-based web application** for predicting house prices
 - **User-Friendly Interface**: Built with Streamlit for easy interaction.
 - **District Classification**: Supports multiple districts in Kota Bandung, grouped into categories for better feature engineering.
 - **Property Features Input**:
-  - Land Area (LB)
-  - Building Area (LT)
+  - Land Area (LT)
+  - Building Area (LB)
   - Number of Bedrooms (KT)
   - District selection with automatic categorization
 - **Outlier Handling**: Employs custom logic to handle outliers in input data using IQR-based clipping.
@@ -23,13 +23,8 @@ This is a **machine learning-based web application** for predicting house prices
 ## 🛠️ How to Run the Project
 
 ### Prerequisites
-- Python 3.7 or later
-- Required Python libraries:
-  - `streamlit`
-  - `pandas`
-  - `numpy`
-  - `sklearn`
-  - `pickle`
+- Python 3.11
+- Pipenv for managing dependencies
 
 ### Steps
 1. Clone the repository:
@@ -37,15 +32,19 @@ This is a **machine learning-based web application** for predicting house prices
    git clone https://github.com/yourusername/house-price-prediction-bandung.git
    cd house-price-prediction-bandung
    ```
-2. Install dependencies:
+2. Install dependencies using Pipenv:
    ```bash
-   pip install -r requirements.txt
+   pipenv install
    ```
-3. Run the app:
+3. Activate the Pipenv shell:
+   ```bash
+   pipenv shell
+   ```
+4. Run the app:
    ```bash
    streamlit run app.py
    ```
-4. Open the application in your browser at `http://localhost:8501`.
+5. Open the application in your browser at `http://localhost:8501`.
 
 ---
 
@@ -77,13 +76,12 @@ Input features:
 
 **Predicted Price**: Rp 1,500,000,000
 
-
-
 ---
+
 
 ## 🤝 Contribution
 Feel free to fork this repository, open issues, or submit pull requests for any improvements.
 
----
+--- 
 
-Would you like to include any additional sections or details? Let me know!
+Let me know if you need additional adjustments or details!
