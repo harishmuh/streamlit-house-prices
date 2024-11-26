@@ -35,8 +35,8 @@ st.sidebar.header('Please input Property Features')
 def create_user_input():
     
     # Input numerik
-    LB = st.sidebar.number_input('Land Area (LB)', min_value=1, max_value=507, value=100)
-    LT = st.sidebar.number_input('Building Area (LT)', min_value=1, max_value=556, value=150)
+    LT = st.sidebar.number_input('Land Area (LT)', min_value=1, max_value=507, value=100)
+    LB = st.sidebar.number_input('Building Area (LB)', min_value=1, max_value=556, value=150)
     KT = st.sidebar.slider('Number of Bedrooms (KT)', min_value=1, max_value=8, value=3)
 
     # Input kategorikal
